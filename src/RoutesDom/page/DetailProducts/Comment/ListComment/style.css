@@ -1,0 +1,124 @@
+.group-list-comment {
+  margin: 20px 0;
+}
+.group-list-comment .iteml-comment .group-review {
+  display: flex;
+  border-bottom: 1px solid rgb(239, 233, 242);
+}
+.iteml-comment .comment-list .group-content p.text-hidden {
+  overflow: hidden;
+  height: 110px;
+  transition: ease-out 0.3s
+}
+.iteml-comment .comment-list .group-content.open  p.text-hidden{
+  overflow: visible;
+  height:auto;
+} 
+.iteml-comment .comment-list .group-content button {
+  display: block;
+  text-align: center;
+  padding: 3px 10px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  border-radius:2px;
+  outline: none;
+  background:none;
+  color:#1890ff;
+  border: none;
+}
+.group-list-comment .iteml-comment .group-review h3 {
+  color: #282c34;
+  font-size: 1.2em;
+  font-weight: 550;
+  margin: 0;
+  text-align: left;
+}
+.group-list-comment .iteml-comment .group-review p {
+  font-size: 14px;
+  padding-left: 10px;
+  transition: ease 0.3s;
+  color: rgb(181, 178, 178);
+}
+.group-list-comment .ant-comment-content-author-name {
+  color: rgb(36, 36, 36);
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.group-list-comment .ant-list-split .ant-list-header {
+  padding: 10px 20px;
+}
+.group-list-comment .group-start {
+  position: absolute;
+  right: 10px;
+  top: -30px;
+}
+.group-list-comment .group-time {
+  padding-top: 4px;
+}
+.group-list-comment .group-time span {
+  padding-right: 15px;
+  color: rgb(153, 153, 153);
+  font-weight: 400;
+  font-size: 1.02em;
+}
+.group-list-comment li {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(239, 233, 242);
+  border: 1px solid rgb(239, 233, 242);
+  margin: 20px 0;
+  border-radius: 8px;
+  position: relative;
+  display: block;
+}
+.group-list-comment li:last-child {
+  border-bottom: none;
+}
+.group-list-comment .iteml-comment .ant-comment {
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.group-list-comment .iteml-comment .group-time-tart {
+  display: flex;
+}
+.group-list-comment .iteml-comment .ant-comment-content-author-time {
+  width: 100%;
+}
+
+.group-delete {
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+}
+.group-delete span {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.group-list-comment .iteml-comment .load-data-comment {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 15px;
+  background: transparent;
+  border: 1px solid rgb(24, 158, 255);
+  cursor: pointer;
+  font-size: 0.9em;
+  text-transform: capitalize;
+  color: rgb(24, 158, 255);
+  transition: 0.3s ease-out;
+  font-weight: 500;
+}
+.group-list-comment .iteml-comment .load-data-comment:hover {
+  background: rgb(24, 158, 255);
+  color: #ffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .group-list-comment {
+    margin: 20px 10px;
+  }
+}

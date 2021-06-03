@@ -1,0 +1,60 @@
+.group-register {
+    padding-left: 270px;
+    position: relative;
+    display: block;
+}
+.group-register .main-register {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+}
+.group-register .main-register .container-register {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+}
+.group-register .main-register .container-register .btn-register {
+    padding: 7px 18px;
+    height: 40px;
+    border-radius: 4px;
+}
+.group-register .main-register .container-register h3 {
+    color: rgb(51, 51, 51);
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 20px 0;
+    padding-left: 15px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .group-register {
+        padding-left: 0;
+    }
+    .group-register .main-register {
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .group-register .main-register .container-register {
+        margin: auto;
+        padding: 20px 10px;
+        border: none;
+    }
+}
+@media screen and (max-width: 575px) {
+    .group-register .main-register .container-register .btn-register {
+        width: 100%;
+    }
+    .group-register .main-register .container-register .Login-form {
+        text-align: center;
+        display:block;
+        line-height:35px;
+    }
+}

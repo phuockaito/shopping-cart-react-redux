@@ -1,0 +1,268 @@
+.ground-menu {
+    width: 270px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 15;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-right: 2px solid #F7F8F9;
+}
+
+.ground-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: 5px solid #e8dfec;
+}
+ 
+.ground-menu::-webkit-scrollbar {
+    width: 7px;
+}
+.ground-menu:hover::-webkit-scrollbar-thumb {
+    background: #06c1d4;
+}
+/* --------------login-sin---------------- */
+.ground-menu .nav-toggle .login-sin {
+    display: grid;
+    position: absolute;
+    margin-top: 28px;
+    width: 100%;
+    padding: 0 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    transition: 0.3s ease-in-out;
+}
+.ground-menu .nav-toggle .login-sin a {
+    font-size: 15px;
+    text-transform: capitalize;
+    height: 37px;
+    color: #fdf9ff;
+    border-radius:3px;
+    background-color: #302e4d;
+    font-weight: 450;
+    line-height: 37px;
+}
+/* --------------------------------logo-------------------------------- */
+.ground-menu .nav-toggle a.logo {
+ 
+    line-height: 75px;
+    top: 15px;
+ 
+    z-index: 11;
+    position: relative;
+    max-width: 230px;
+    margin: auto;
+    display:none;
+    font-family: 'Nerko One', cursive;
+}
+.ground-menu .nav-toggle a.logo::after,
+.ground-menu .nav-toggle a.logo::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+}
+.ground-menu .nav-toggle a.logo::after {
+    left: 0;
+    top: 0;
+    border-left: 4px solid #ec1839;
+    border-top: 4px solid #ec1839;
+}
+.ground-menu .nav-toggle a.logo::before {
+    border-right: 4px solid #ec1839;
+    border-bottom: 4px solid #ec1839;
+    right: 0;
+    bottom: 0;
+}
+.ground-menu .nav-toggle a.logo img{
+    max-width:  150px;
+    height: auto;
+    position: relative;
+}
+/*--------------------nav-toggle--------------------*/
+.ground-menu .nav-toggle {
+    position: relative;
+    display: block;
+    width: 270px;
+    height: 76px;
+    transition: 0.3s ease-in-out;
+    z-index: 16;
+}
+.ground-menu .nav-toggle span {
+    position: fixed;
+    width: 270px;
+    height: 76px;
+    font-size: 25px;
+    display:none;
+    color: #ffff;
+    z-index: 14;
+    transition: 0.3s ease-in-out;
+    background:#05042c;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+/* open menu */
+.ground-menu.open {
+    left: 0;
+}
+.ground-menu .nav-toggle span i {
+    position: absolute;
+    padding: 8px 17px;
+    margin: 0px 4px;
+    display: none;
+    z-index: 15;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+/*--------------------------------Menu-------------------------------- */
+.ground-menu nav .menu {
+    z-index: 10;
+    padding: 15px;
+    position: relative;
+}
+.ground-menu nav .menu li {
+    display: block;
+}
+.ground-menu nav .menu > li > a {
+    font-size: 15px;
+    font-weight: 550;
+    position: relative;
+    text-transform: capitalize;
+    color: rgba(0,0,0,.85);
+    line-height: 45px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+     padding-left: 10px;
+    display: block;
+}
+.ground-menu nav .menu li a i.fa-caret-down {
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    transform: rotate(-90deg);
+    transition: all 0.3s ease-in-out;
+    color:rgba(0,0,0,.85);
+}
+.ground-menu nav .menu li a.active {
+    color: #1890ff;
+}
+ 
+.ground-menu nav .menu > li:hover > a:not(.active) {
+    color: #1890ff;
+}
+ 
+.ground-menu nav .menu li a .fa {
+    margin-right: 5px;
+    width: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+/*--------------------------------Sub Menu-------------------------------- */
+.sub-menu {
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    max-height: 0px;
+}
+.ground-menu nav > .menu > li.active-menu.open .sub-menu {
+    max-height: 1100px;
+}
+.ground-menu nav > .menu > li.active-menu.open a i.fa-caret-down {
+    transform: rotate(0deg);
+    color:#1890ff;
+}
+.ground-menu nav > .menu > li.active-menu.open > a{
+    color:#1890ff !important;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    background:#e6f7ff;
+    border-radius: 3px;
+}
+.ground-menu nav > .menu > li.active-menu.open > a:before {
+    content: '';
+    position: absolute;
+    width: 2.5px;
+    height: 100%;
+    left: 0;
+    transform: translate(-50%,0%);
+    top: 0;
+    background:#1890ff;
+    transition: all 0.3s ease-in-out;
+}
+.sub-menu > li > a {
+    padding: 5px 24px;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    text-transform: capitalize;
+    color: #1a1a1a;
+    line-height: 30px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+}
+.sub-menu > li:last-child{
+    border-bottom: none;
+}
+.sub-menu > li > a:hover {
+    text-decoration: underline;
+}
+
+
+/*----------------copyright----------------*/
+.ground-menu .copyright-text {
+    font-size: 13px;
+    color: #7d7d7d;
+    text-align: center;
+}
+/* ----------------Responsive ----------- */
+@media screen and (max-width: 1000px) {
+    .ground-menu .nav-toggle a.logo {
+        display: block;
+    }
+    .ground-menu nav .menu > li:hover > a:not(.active) {
+        color:#302e4d;
+    }
+    .ground-menu nav {
+        position: relative;
+        top: 25px;
+    }
+    .ground-menu {
+        left: -300px;
+    }
+    .ground-menu.open .nav-toggle span,.ground-menu .nav-toggle  {
+        display: block;
+        height: 100px;
+    }
+    .ground-menu .nav-toggle .login-sin {
+        opacity: 1;
+        visibility: visible;
+    }
+    .show-menu-1000,
+    .ground-menu .nav-toggle i.fa-times {
+        display: block !important;
+    }
+    .totle-menu {
+        display: block !important;
+        grid-row: 1/3;
+        cursor: pointer;
+    }
+    .totle-menu i {
+        font-size: 23px;
+        color: #ffff;
+        cursor: pointer;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .totle-menu i {
+        font-size: 20px;
+    }
+}

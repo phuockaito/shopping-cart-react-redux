@@ -1,0 +1,140 @@
+.ground-user {
+ 
+    position: relative;
+    margin: auto;
+}
+.ground-user .items-login {
+    display: block;
+    height: 40px;
+    width: 110px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #1890ff;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.ground-user .main-user {
+    position: relative;
+    display: block;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.ground-user .frofile-login {
+    position: relative;
+}
+.ground-user .frofile-login .login {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    z-index: 11;
+}
+/* -----------------login user--------- */
+.ground-user .frofile-login .login i {
+    line-height: 23px;
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    border-radius: 50%;
+    color: #302e4d;
+    right: 5px;
+    background-color: #20232a;
+}
+.ground-user .frofile-login .login .show-login {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: #fdf9ff;
+    left: 0;
+    top: -300px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    grid-template-columns: 10% 45% 45%;
+    grid-gap: 5px;
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 15;
+}
+
+.ground-user .frofile-login .login .show-login a.item-login {
+    display: block;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    background-color:rgb(24, 158, 255);
+    color: #fdf9ff;
+    font-size: 16px;
+}
+.ground-user .frofile-login .login a {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #302e4d;
+}
+
+/* ------------------Luccess login------------------*/
+.ground-user .frofile-login .avartar-user {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+}
+.ground-user .frofile-login .avartar-user img {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .ground-user .items-login{
+        display: none;
+    }
+    .ground-user .frofile-login .login .show-login.open {
+        top: 0;
+    }
+    .ground-user {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .show-login.open  i.fa.fa-long-arrow-left.btn-close-login{
+        background:#ffff;
+    }
+    .ground-user .frofile-login .login i.hide-1000 {
+        display: none;
+    }
+    .ground-user .frofile-login .login i.btn-show-login {
+        display: block !important;
+        color:#ffff;
+    }
+    .ground-card {
+        justify-self: center;
+    }
+}
+@media screen and (max-width: 420px) {
+    .ground-user .frofile-login .avartar-user {
+        width: 30px;
+        height: 30px;
+    }
+    .ground-user .frofile-login .login .show-login a.item-login {
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .ground-user .frofile-login .login .show-login a.item-login {
+        font-weight: 450;
+        font-size: 14px;
+        width: 100px;
+        height: 33px;
+        line-height: 33px;
+    }
+}

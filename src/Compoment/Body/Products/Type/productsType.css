@@ -1,0 +1,172 @@
+.group-products-type {
+    position: relative;
+    border-radius: 8px;
+    margin-top: 40px;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+}
+.group-products-type h3 {
+    color: #282c34;
+    font-size: 1.2em;
+    font-weight: 550;
+    padding: 20px 0;
+    padding-left: 15px;
+}
+.group-products-type .grouducts-type {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-gap: 5px; */
+    grid-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 4px;
+}
+.grouducts-type .item-products-type {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #e8dfec;
+    border-radius: 6px;
+    transition: 0.1s ease-out;
+}
+.grouducts-type .item-products-type a {
+    position: relative;
+    z-index: 10;
+    display: block;
+}
+.grouducts-type .item-products-type:hover {
+    transform: scale(1.005);
+    box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+    border:1px solid #F7F8F9;
+}
+.grouducts-type .item-products-type .ig-products-type {
+    position: relative;
+    display: block;
+    max-width: 250px;
+    margin: 10px auto 10px auto;
+    height: 230px;
+}
+.grouducts-type .item-products-type .name-products-type {
+  padding-top: 5px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+.grouducts-type .item-products-type:hover .name-products-type p {
+    color: rgb(24, 158, 255);
+}
+.grouducts-type .item-products-type .name-products-type p {
+    font-size: 1.1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #000;
+    margin: auto;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.2s ease-out;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.grouducts-type .item-products-type .ig-products-type img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+.grouducts-type .item-products-type .price-products-type {
+    display: block;
+    
+}
+
+.item-products-type .price-products-type .group-price-sale {
+    position: relative;
+    display: block;
+}
+.item-products-type .price-products-type .group-price-sale span {
+    text-decoration: line-through;
+    color: #34324977;
+    font-size: 1.1em;
+}
+ 
+.grouducts-type .item-products-type .price-products-type .group-price span {
+    color: #ec1839;
+    display: block;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.2em;
+    line-height:35px;
+}
+
+@media screen and (max-width: 1250px) {
+    .group-products-type .grouducts-type {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width: 1000px) {
+    .group-products-type .grouducts-type {
+        padding: 10px 5px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .group-products-type .grouducts-type {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 888px) {
+    .grouducts-type .item-products-type {
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .group-products-type h3 {
+        font-size: 1em;
+    }
+    .group-products-type .grouducts-type {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grouducts-type .item-products-type .ig-products-type {
+        height: 215px;
+        margin: 0;
+    }
+    .group-products-type .grouducts-type {
+        grid-gap: 5px;
+    }
+    .grouducts-type .item-products-type .price-products-type {
+        grid-template-columns: 100%;
+    }
+    .grouducts-type .item-products-type {
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .grouducts-type .item-products-type .name-products-type p {
+        font-size: 1em;
+    }
+    .grouducts-type .item-products-type .price-products-type .group-price span {
+        font-size: 1em;
+    }
+    .grouducts-type .item-products-type .ig-products-type {
+        height: 160px;
+    }
+    .item-products-type .price-products-type .group-price-sale span {
+        font-size: 0.9em;
+    }
+}
+ 
+
+@media screen and (max-width: 350px) {
+    .grouducts-type .item-products-type .ig-products-type {
+        height: 120px;
+    }
+}

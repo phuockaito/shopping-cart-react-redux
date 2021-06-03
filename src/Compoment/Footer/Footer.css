@@ -1,0 +1,139 @@
+.frames-group-footer {
+    position: relative;
+}
+
+.frames-group-footer .group-footer {
+    padding-left: 270px;
+    background:#05042c;
+}
+.frames-group-footer .group-footer .footer {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    
+}
+.frames-group-footer .group-footer .footer h3 {
+    color: #ffff;
+    font-size:15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0px 0px 17px;
+    position: relative;
+}
+
+.frames-group-footer .group-footer .footer ul li {
+    display: block;
+    margin-bottom: 1.1em;
+    color:hsla(0,0%,100%,.7);
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 520;
+}
+.group-footer .footer .group-payment > ul {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.group-footer .footer .group-payment h3,
+.group-footer .footer .group-connect-us h3 {
+    text-align: center;
+}
+.footer .group-payment > ul > li {
+    position: relative;
+    display: block;
+    width: 70px;
+    margin: auto;
+    height: 45px;
+}
+.footer .group-payment > ul > li > img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.group-footer .footer .group-connect-us ul {
+    display: grid;
+    padding: 0 10px;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+}
+.group-footer .footer .group-connect-us ul li {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: auto;
+    line-height: 50px;
+    border-radius: 4px;
+}
+.group-footer .footer .group-connect-us ul li:nth-child(1) {
+    background: #4064ac;
+}
+.group-footer .footer .group-connect-us ul li i:nth-child(1),
+.group-footer .footer .group-connect-us ul li i:nth-child(2),
+.group-footer .footer .group-connect-us ul li i:nth-child(3) {
+    color: #fff;
+    font-size: 1.6em;
+}
+.group-footer .footer .group-connect-us ul li:nth-child(2) {
+    background: #1c9cea;
+}
+.group-footer .footer .group-connect-us ul li:nth-child(3) {
+    background: #f70000;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+    .frames-group-footer .group-footer {
+        padding-left: 0;
+    }
+    .frames-group-footer .group-footer .footer{
+        margin:auto;
+    }
+}
+@media screen and (max-width: 800px) {
+    .frames-group-footer .group-footer .footer {
+        grid-template-columns: 50% 50%;
+    }
+    .frames-group-footer .group-footer .footer h3{
+        text-align:left;
+    }
+}
+@media screen and (max-width: 768px) {
+    .frames-group-footer .group-footer .footer h3 {
+        font-size: 0.9em;
+    }
+    .footer .group-payment > ul > li{
+        width: 50px;
+        height: 30px;
+    }
+    .frames-group-footer .group-footer .footer ul li{
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 411px) {
+    .frames-group-footer .group-footer .footer {
+        grid-template-columns: 100%;
+        padding:20px 10px;
+    }
+    .group-connect-us{
+        position: relative;
+        bottom: 10px;
+    }
+    .group-footer .footer .group-connect-us ul {
+        padding:0;
+    }
+    .group-footer .footer .group-payment h3, .group-footer .footer .group-connect-us h3{
+        text-align: left;
+    }
+}

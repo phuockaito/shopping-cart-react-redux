@@ -1,0 +1,225 @@
+.no-product-search path {
+    stroke:none;
+    stroke-width: 3px;
+}
+.main-search {
+    position: relative;
+    display: block;
+    padding-left: 270px;
+}
+.main-search .group-product-search {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+    border-radius: 8px;
+}
+.main-search .group-product-search .ant-pagination-options{
+    display: none;
+}
+.main-search .group-product-search button.load-data {
+    padding: 6px 36px;
+    border-radius: 15px;
+    background: transparent;
+    border: 1px solid rgb(24, 158, 255);
+    cursor: pointer;
+    font-size: 0.9em;
+    text-transform: capitalize;
+    color: rgb(24, 158, 255);
+    transition: 0.3s ease-out;
+    font-weight: 520;
+    margin-bottom: 10px;
+}
+.main-search .group-product-search button.load-data:hover {
+    background: rgb(24, 158, 255);
+    color: #fff;
+}
+.main-search .group-product-search h3 {
+    color: rgb(51, 51, 51);
+    font-size: 1.2em;
+    font-weight: 540;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.group-product-search .no-product-search p {
+    padding: 10px 20px;
+    color: #bdc3c7;
+    text-align: center;
+    font-size: 1em;
+}
+/* --------------------------ittem Search-------------------- */
+.group-product-search {
+    position: relative;
+}
+.group-product-search .group-search {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 4px;
+}
+.group-search .item-products-search {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #e8dfec;
+    border-radius: 6px;
+    transition: 0.1s ease-out;
+}
+.group-search .item-products-search a {
+    position: relative;
+    z-index: 10;
+    display: block;
+}
+.group-search .item-products-search:hover {
+    box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 
+    0 6px 16px 0 rgba(0,0,0,.08),
+     0 9px 28px 8px rgba(0,0,0,.05);
+    transform: scale(1.005);
+    border:1px solid #F7F8F9;
+}
+.group-search .item-products-search .ig-products-search {
+    position: relative;
+    display: block;
+    max-width: 250px;
+    margin: 10px auto 10px auto;
+    height: 230px;
+}
+.group-search .item-products-search .name-products-search {
+    padding: 10px 0;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+.group-search .item-products-search:hover .name-products-search p {
+    color: rgb(24, 158, 255);
+}
+.group-search .item-products-search .name-products-search p {
+    font-size: 1.1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.2s ease-out;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    margin:0;
+}
+.group-search .item-products-search .ig-products-search img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+}
+
+.group-search .item-products-search .price-products-search {
+    display: block;
+}
+.item-products-search .price-products-search .group-price-sale {
+    position: relative;
+    display: block;
+}
+.item-products-search .price-products-search .group-price-sale span {
+    text-decoration: line-through;
+    color: #34324977;
+    font-size: 1.1em;
+}
+
+.group-search .item-products-search .price-products-search .group-price span {
+    color: #ec1839;
+    display: block;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.2em;
+    line-height:35px;
+}
+
+/* -------------------------- */
+/*--------------------Resepsive----------- */
+@media screen and (max-width: 1250px) {
+    .group-product-search .group-search {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width: 1000px) {
+    .group-product-search .group-search {
+        padding: 10px 5px;
+    }
+    .main-search {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .group-product-search .group-search {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 888px) {
+    .group-search .item-products-search {
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .group-product-search h3 {
+        font-size: 1em;
+    }
+    .group-product-search .group-search {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-search .group-product-search h3 {
+        font-size: 1em;
+        padding: 0 15px;
+    }
+    .group-product-search .no-product-search p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .group-search .item-products-search .ig-products-search {
+        height: 215px;
+        margin: 0;
+    }
+    .group-search .item-products-search .price-products-search{
+        grid-template-columns: 100%;
+
+    }
+    .group-product-search .group-search {
+        grid-gap: 5px;
+    }
+    .group-search .item-products-search {
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .group-search .item-products-search .name-products-search p {
+        font-size: 1em;
+    }
+    .group-search .item-products-search .price-products-search .group-price span {
+        font-size: 1em;
+    }
+    .item-products-search .price-products-search .group-price-sale span {
+        font-size: 0.9em;
+    }
+    .group-search .item-products-search .ig-products-search {
+        height: 160px;
+    }
+}
+ 
+@media screen and (max-width: 320px) {
+    .group-search .item-products-search .ig-products-search {
+        height: 120px;
+    }
+}

@@ -1,0 +1,165 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+button {
+  cursor: pointer;
+}
+title {
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+body.active {
+  overflow: hidden;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  background: #fff;
+  line-height: 1.5;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+#root {
+  width: 100%;
+  position: relative;
+}
+.ant-empty-description {
+  color: rgba(95, 95, 95, 0.719) !important;
+}
+.ant-pagination {
+  padding: 20px 0 !important;
+}
+/* sidler */
+.slick-next,
+.slick-prev {
+  position: absolute;
+  z-index: 10000;
+  background: #20232a !important;
+  width: 30px;
+  height: 75px;
+  border-radius: 2px;
+}
+.slick-prev {
+  left: 10px;
+}
+.slick-next {
+  right: 10px;
+}
+.slick-dots li button:before {
+  color: #302e4d !important;
+  font-size: 13px;
+}
+.slick-dots li.slick-active button:before {
+  color: #302e4d !important;
+}
+.slick-dots {
+  bottom: -20px;
+}
+.slick-dots li.slick-active button:before {
+  color: #000000 !important ;
+  font-size: 13px;
+}
+path {
+  stroke: rgb(254, 211, 48);
+  stroke-width: 3px;
+}
+.group-nofuound path {
+  stroke: none;
+  stroke-width: 3px;
+}
+/*-------------------Start scrollTop -------------------*/
+
+button.scrollTop {
+  background: #06c1d4;
+  color: #ffffff;
+  font-size: 24px;
+  height: 40px;
+  line-height: 37px;
+  text-align: center;
+  width: 40px;
+  border-radius: 4px;
+  -webkit-transition-duration: 500ms;
+  position: fixed;
+  transition-duration: 500ms;
+  border: none;
+  bottom: 1000px;
+  right: 30px;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  z-index: 99;
+}
+button.scrollTop.active {
+  bottom: 15px;
+  opacity: 1;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  border: 5px solid #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #06c1d4;
+  border-radius: 3px;
+  z-index: 100;
+}
+.group-start-review {
+  text-align: center;
+}
+.group-start-review p {
+  color: #353b48b4;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+ 
+ 
+@media screen and (max-width: 780px) {
+  h2#swal2-title {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .slick-next,
+  .slick-prev {
+    width: 20px;
+    height: 50px;
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .group-start-review .star-container {
+    padding-right: 0px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slick-next,
+  .slick-prev {
+    width: 18px;
+    height: 45px;
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 13px;
+  }
+}

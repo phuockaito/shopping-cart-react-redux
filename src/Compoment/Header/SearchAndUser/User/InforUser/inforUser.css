@@ -1,0 +1,57 @@
+.information{
+    position: relative;
+    display: block;
+}
+.information .group-avatar{
+    text-align: center;
+}
+.change-information{
+    margin-top:10px;
+    position: relative;
+}
+.information .group-avatar img{
+    border-radius: 8px;
+    width: 100%;
+    margin:auto;
+    box-shadow:0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+    border: 1px solid #F7F8F9;
+}
+.information .group-avatar .group-upload-image{
+    position: relative;
+    margin:10px auto;
+}
+.information .group-name,
+.information .group-email,
+.information .group-sex,
+.information .group-loginout,
+.information .group-buy-cart,
+.information .group-comments{
+    display:flex;
+    padding: 10px 0;
+    align-items: center;
+}
+ 
+.information .icon-user-information
+{
+    display:inline-block !important;
+    font-size: 1.2em;
+    padding-right: 20px;
+}
+.information .inforUser{
+    margin:0;
+    font-size: 1.1em;
+    font-weight: 500;
+    color:#272727;
+}
+.information button.inforUser{
+    display:block;
+    background:none;
+    outline: none;
+    border: none;
+}
+ 
+@media screen and (max-width:510px){
+    .container-information .ant-drawer-content-wrapper{
+        width: 100% !important;
+    }
+}

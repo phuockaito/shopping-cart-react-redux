@@ -1,0 +1,414 @@
+.container-detail-products {
+    padding-left: 270px;
+    position: relative;
+    display: block;
+}
+
+.container-detail-products .group-detai {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-detail-products .group-detai .group-detail-products {
+    max-width: 1200px;
+    margin: 20px auto;
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.container-detail-products .group-detail-products .group-detail {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+    margin: 20px 0;
+}
+/*-------------Group image----------- */
+.group-detail-products .group-detail .group-image-detail {
+    padding: 20px 10px;
+    margin: 0 20px;
+}
+.group-detail .group-image-detail .image-poster-detail {
+    position: relative;
+    max-width: 470px;
+    height: 480px;
+}
+.image-arry-silder {
+    position: relative;
+    height: auto;
+}
+.image-arry-silder .ant-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.image-arry-silder img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.group-array-image {
+    height: auto;
+    display: flex !important;
+    padding: 10px;
+    background: #fdf9ff;
+    position: relative;
+}
+.group-array-image > li {
+    position: relative;
+    cursor: pointer;
+    width: 120px;
+    height: auto;
+    margin: 0 5px;
+}
+.group-array-image > li.slick-active img {
+    border: 2px solid #1c9cea;
+    transform: scale(1.01);
+}
+.group-array-image > li img {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease-out;
+}
+/* infomation */
+.group-detail-products .group-detail .gruop-information-detail {
+    padding: 20px 10px;
+}
+
+.gruop-information-detail .information-detail .group-free-detail {
+    padding: 10px 25px;
+    margin: 25px 0;
+    background: rgb(214, 245, 214);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.information-detail .group-free-detail .img-free-detail {
+    width: 48px;
+    height: 32px;
+    position: relative;
+    margin-right: 10px;
+}
+.information-detail .group-free-detail p {
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(0, 153, 0);
+}
+.gruop-information-detail .information-detail .name-detail h3 {
+    color: #282c34;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.gruop-information-detail .group-description-more .description-more-info {
+    margin-top: 20px;
+}
+.description-more-info .group-rate-Review {
+}
+.description-more-info .group-rate-Review .revews-products p {
+    color: #ee4d2d;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.description-more-info .group-rate-Review .revews-products .start-review span {
+    color: #ee4d2d;
+    font-size: 14px;
+    text-decoration: underline;
+    padding: 0 5px;
+}
+.group-description-more .description-more-info p {
+    color: #282c34;
+    font-size: 14px;
+    font-weight: 550;
+    text-transform: capitalize;
+    padding: 2px 0;
+}
+.group-description-more .description-more-info p span {
+    color: #282c34;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+/* group buys */
+.group-detail .gruop-information-detail .group-buys-detail {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 10px 0;
+    margin: 25px 0;
+}
+.gruop-information-detail .group-buys-detail .group-quantity-number {
+    flex-wrap: wrap;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 35px;
+    margin: 5px 0;
+}
+.group-buys-detail .group-quantity-number span {
+    color: rgb(123, 123, 123);
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+.group-quantity-number .quantity-number {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.group-quantity-number .quantity-number * {
+    position: relative;
+    width: 40px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid rgb(236, 236, 236);
+}
+.group-quantity-number .quantity-number div {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 550;
+    color: black;
+    transition: 0.1s ease-out;
+}
+.group-quantity-number .quantity-number .click-left {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.group-quantity-number .quantity-number .click-right {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.group-quantity-number .quantity-number div:hover {
+    background-color: rgb(189, 189, 189);
+}
+.group-quantity-number .quantity-number p {
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    color: rgb(23, 23, 23);
+    font-weight: 550;
+    margin-bottom: 0;
+}
+.group-detail .gruop-information-detail .buys-detail {
+    justify-self: center;
+}
+.group-detail .gruop-information-detail .buys-detail button {
+    width: 155px;
+    height: 40px;
+    outline: none;
+    background: #ff4d4f;
+    color: #fff;
+    border: 1px solid #ff4d4f;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: 550;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.group-detail .gruop-information-detail .buys-detail button i {
+    padding-right: 10px;
+    font-size: 15px;
+    color: #fff;
+    transition: 0.2s ease-out;
+}
+/*---------------price--------- */
+.gruop-information-detail .information-detail .group-price-size {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 30px 10px;
+    background: #f7f8f9;
+    border-radius: 8px;
+    margin: 35px 0;
+    align-items: center;
+}
+.information-detail .group-price-size .group-size {
+    position: relative;
+    display: grid;
+    justify-self: center;
+    display: block;
+    width: 100%;
+}
+.information-detail .group-price-size .group-size .ant-form-item {
+    margin-bottom: 0;
+}
+.information-detail .group-price-size .group-price span {
+    display: block;
+}
+.information-detail .group-price-size .group-price span:nth-child(1) {
+    color: rgb(255, 52, 37);
+    font-size: 1.5em;
+    font-weight: 550;
+}
+.information-detail .group-price-size .group-price span:nth-child(2) {
+    font-size: 1em;
+    text-decoration: line-through;
+    color: #34324977;
+    font-weight: 550;
+}
+
+/* ---------------Descripttiom---------------------- */
+
+.group-detail-products .group-description {
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+}
+.group-detail-products .group-description h2 {
+    color: rgb(13, 12, 12);
+    font-size: 20px;
+    font-weight: 550;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.group-description .group-description-text p::first-letter,
+.group-description .group-description-text h3::first-letter {
+    text-transform: capitalize;
+}
+.group-description .group-description-text h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.group-description .group-description-text p {
+    font-size: 1.1em;
+    color: rgb(60, 59, 59);
+    text-align: justify;
+}
+/* --------------alert------------- */
+
+/*------------------responsive------------------*/
+@media screen and (max-width: 1100px) {
+    .group-description-more .description-more-info p {
+        padding: 5px 0;
+    }
+
+    .container-detail-products .group-detail-products {
+        margin: 10px auto;
+    }
+    .container-detail-products .group-detail-products .group-detail {
+        grid-template-columns: 50% 50%;
+    }
+
+    .gruop-information-detail .information-detail .group-free-detail {
+        margin: 5px auto;
+    }
+    .group-detail .gruop-information-detail .group-buys-detail {
+        margin: 10px auto;
+    }
+    .gruop-information-detail .information-detail .group-price-size {
+        margin: 15px 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .container-detail-products {
+        padding-left: 0;
+    }
+
+    .container-detail-products .group-detai .group-detail-products,
+    .container-detail-products .group-detai {
+        margin: auto auto 20px auto;
+    }
+    .group-detail-products .group-description {
+        padding: 15px 10px;
+    }
+    .container-detail-products .group-detail-products {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .group-detail .gruop-information-detail .group-buys-detail,
+    .gruop-information-detail .information-detail .group-price-size {
+        grid-template-columns: 100%;
+    }
+    .group-detail .gruop-information-detail .buys-detail {
+        justify-self: start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gruop-information-detail .information-detail .name-detail h3 {
+        font-size: 1.5em;
+    }
+    .group-detail .gruop-information-detail .buys-detail button:hover i {
+        color: #fff;
+    }
+    .gruop-information-detail .information-detail .group-price-size {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .gruop-information-detail .information-detail .name-detail h3 {
+        font-size: 1.5em;
+    }
+    .group-description-more .description-more-info p {
+        padding: 2px 0;
+    }
+    .gruop-information-detail .information-detail .group-price-size {
+        grid-template-columns: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .container-detail-products .group-detail-products .group-detail {
+        grid-template-columns: 100%;
+    }
+    .group-detail .gruop-information-detail .buys-detail {
+        justify-self: start;
+    }
+    .group-detail .gruop-information-detail .group-buys-detail {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .gruop-information-detail .information-detail .group-free-detail {
+        padding: 10px;
+    }
+
+    .group-detail-products .group-detail .gruop-information-detail {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .group-detail-products .group-description h2 {
+        font-size: 1.1em;
+    }
+    .group-detail .gruop-information-detail .buys-detail button,
+    .group-buys-detail .group-quantity-number span {
+        font-size: 1em;
+    }
+    .group-description .group-description-text p {
+        font-size: 1em;
+    }
+    .group-description .group-description-text h3 {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 411px) {
+    .information-detail .group-price-size .group-size {
+        justify-self: start;
+        grid-gap: 5px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .gruop-information-detail .information-detail .name-detail h3 {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,159 @@
+.group-silder {
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.group-silder h3 {
+    color: rgb(51, 51, 51);
+    font-size: 1.2em;
+    font-weight: 550;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.group-silder .silder {
+    position: relative;
+    padding: 20px 30px;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: 0.1s ease-out;
+    max-width: 1200px;
+}
+.silder .iteml-silder {
+    border: 1px solid #e8dfec;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px;
+    transition: 0.2s ease-out;
+    margin: 5px 0;
+}
+ 
+.silder .iteml-silder .ig-silder {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 7px;
+}
+.silder .iteml-silder img {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.silder .iteml-silder .name-silder {
+    position: relative;
+    display: block;
+    padding-top: 5px;
+}
+.silder .iteml-silder:hover .name-silder p {
+    color: rgb(24, 158, 255);
+}
+.silder .iteml-silder .name-silder p {
+    font-size: 1.1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    display: -webkit-box;
+    transition: 0.2s ease-out;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    margin: 0;
+}
+.silder .iteml-silder .price-sidler {
+    display: block;
+}
+.silder .iteml-silder .price-sidler span {
+    color: #ec1839;
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.2em;
+}
+.group-silder .silder .slick-initialized .slick-slide > div {
+    margin: 0 2px;
+}
+.silder .iteml-silder .price-sidler span:nth-child(2) {
+    text-decoration: line-through;
+    color: #34324977;
+    font-size: 1em;
+    font-weight: normal;
+}
+ 
+@media screen and (max-width: 1100px) {
+    .group-silder .silder {
+        padding: 20px 10px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .silder .iteml-silder .ig-silder {
+        margin: 10px auto;
+        height: auto;
+    }
+
+    .silder .iteml-silder {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .silder .iteml-silder .ig-silder {
+        margin: 0px auto;
+      
+    }
+
+    .silder .iteml-silder {
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .group-silder h3 {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .silder .iteml-silder .ig-silder {
+        margin: 5px auto;
+      
+    }
+    .silder .iteml-silder .name-silder p {
+        font-size: 1.1em;
+    }
+    .silder .iteml-silder .price-sidler span {
+        font-size: 1.2em;
+    }
+    .silder .iteml-silder .price-sidler span:nth-child(2) {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 600px) {
+    
+    .silder .iteml-silder {
+        padding: 0 5px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .silder .iteml-silder .price-sidler {
+        grid-template-columns: 100%;
+    }
+}
+@media screen and (max-width: 411px) {
+    .silder .iteml-silder .name-silder p {
+        font-size: 1em;
+    }
+    .silder .iteml-silder .price-sidler span {
+        font-size: 1em;
+    }
+    .silder .iteml-silder .price-sidler span:nth-child(2) {
+        font-size: 0.9em;
+    }
+}
+
+ 

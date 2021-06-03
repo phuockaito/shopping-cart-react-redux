@@ -1,0 +1,319 @@
+.container-card{
+    padding-left:270px;
+    position: relative;
+    display:block;   
+}
+.group-nofuound path {
+    stroke: none;
+    stroke-width: 3px;
+}
+.container-card .group-card{
+    position: relative;
+    max-width: 1200px;
+    margin:20px auto;
+    padding: 20px;
+    min-height: 46vh;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+    border-radius: 8px;
+}
+.container-card .group-card h3{
+    color: rgb(51, 51, 51);
+    font-size: 1.2em;
+    font-weight: 550;
+    padding: 20px 0;
+    padding-left: 15px;
+
+}
+.container-card .group-card h3 span{
+    color:rgba(29, 29, 29, 0.76);
+    font-size:0.9em;
+}
+.container-card .group-card .group-card-iteml{
+    display:grid;
+    position: relative;
+    grid-template-columns: 75% 24%;
+    grid-column-gap: 10px;
+}
+/*-----------Card Iteml------------ */
+.group-phone .ant-input-number{
+    width: 100%;
+}
+ .ant-form-item .ant-input-number-handler-wrap{
+    display: none !important;
+}
+.group-card .group-card-iteml .card-iteml{
+    display:grid;
+    padding:30px 0;
+    justify-items: center;
+    grid-template-columns: 25% 40% 15% 20%;
+    border-bottom: 1px solid #e2e2e2;
+    position: relative;
+}
+.group-card-iteml .card-iteml .total-sum{
+    display:block;
+    position:absolute;
+    bottom:0;
+    right: 25px;
+    color: #1e90ff;
+    font-size:1em;
+    font-weight: 550;
+}
+.group-card .group-card-iteml .card-iteml:last-child{
+    border-bottom: none;
+}
+
+.group-card .group-card-iteml .khung-card-iteml{
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border:1px solid rgb(239, 233, 242);
+    border-radius: 4px;
+}
+.khung-card-iteml button.detele-iteml{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    border: none;
+    background:none;
+    z-index: 70;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.khung-card-iteml button.detele-iteml i{
+    font-size:1.3em;
+    color:black;
+    font-weight: bold;
+}
+.group-card-iteml .card-iteml .card-image{
+    position: relative;
+     width: 120px;
+    height: auto;
+}
+.group-card-iteml .card-iteml .card-image img{
+    position: relative;
+    border-radius:10px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+/* ----------------price-------------- */
+.group-card-iteml .card-iteml .card-rice{
+    text-align: center;
+}
+.group-card-iteml .card-iteml .card-rice p{
+    color:#ec1839;
+    font-size: 1.1em;
+    display: block;
+    font-weight: 550;
+    position: relative;
+}
+.group-card-iteml .card-iteml .card-name p::first-letter{
+    text-transform:capitalize;
+}
+.group-card-iteml .card-iteml .card-name p{
+    font-size:1.1em;
+    color:#1e272e;
+    font-weight: 550;
+    padding: 0 10px;
+    display:block;
+    transition: 0.3s ease-out;
+    margin-bottom: 10px;
+}
+.group-card-iteml .card-iteml .card-name p span{
+    color:#2659c8;
+    font-size: 0.9em;
+}
+.group-card-iteml .card-iteml .card-name p:hover{
+    text-decoration: underline;
+}
+/* -------quantity-------------------- */
+.khung-card-iteml .card-iteml .card-quantity{
+    text-align: center;
+}
+.card-iteml .card-rice span,
+.card-iteml .card-quantity span{
+    font-size:1em;
+    margin-bottom: 10px;
+    display:block;
+    color:rgb(48, 48, 48);
+    font-weight: 550;
+}
+.gruop-information-detail .group-buys-detail .card-quantity {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    align-items: center;
+}
+.card-quantity .quantity-number button {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    background-color: rgb(236, 236, 236);
+    color: black;
+    transition: 0.1s ease-out;
+}
+.card-quantity .quantity-number button.click-left {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.card-quantity .quantity-number button.click-right {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.card-quantity .quantity-number button:hover {
+    background-color: rgb(189, 189, 189);
+}
+.card-quantity .quantity-number p {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    line-height: 28px;
+    font-size: 13px;
+    color: rgb(23, 23, 23);
+    font-weight: 550;
+    border: 1px solid rgb(236, 236, 236);
+}
+
+/* ---------card-total-money----------*/
+.card-total-money{
+    border-radius:8px;
+    background:#fff;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border:1px solid rgb(239, 233, 242);
+    height:220px;
+    top: 80px;
+    position: sticky;
+    text-align: center;
+}
+.card-total-money .totle-money h3{
+    color: rgb(51, 51, 51);
+    font-size: 1.2em;
+    font-weight: 550;
+    padding: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 1px solid #e2e2e2;
+}
+.card-total-money .totle-money  .group-totle-money{
+    text-align: center;
+}
+.totle-money  .group-totle-money p{
+    color: rgb(254, 56, 52);
+    font-weight: 550;
+    font-size: 1.3em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+.totle-money  .group-totle-money  span{
+    color: rgb(51, 51, 51);
+    font-size:0.8em;
+}
+
+.card-total-money button{
+    color: rgb(255, 255, 255);
+    display: block;
+    cursor: pointer;
+    background: rgb(255, 66, 78);
+    padding: 10px 15px;
+    border-radius: 4px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin:20px auto;
+    transition:0.4s ease-out;
+    font-size: 1em;
+}
+.card-total-money button:hover{
+    background:red;
+}
+.btn-register{
+    width: 100%;
+}
+
+/*--------------Respensive--------------*/
+@media screen and (max-width:1000px){
+    .container-card .group-card{
+        padding: 20px 10px;
+    }
+    .container-card{
+        padding-left:0px; 
+    }
+    .container-card .group-card .group-card-iteml{
+        grid-template-columns: 100%;
+    }
+    .card-total-money{
+        margin-top: 20px;
+    }
+    .card-total-money .totle-money h3{
+        text-align: left;
+    }
+    .card-total-money .totle-money .group-totle-money{
+        text-align: left;
+        padding-left: 20px;
+    }
+    .card-total-money button{
+        margin: 20px;
+    }
+}
+@media screen and (max-width:800px){
+    .group-card .group-card-iteml .card-iteml{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin:0;
+    }    
+    .group-card-iteml .card-iteml .card-rice p{
+        top:45px;
+    }
+    .card-iteml .card-rice span{
+        position: relative;
+        top: 50px;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width:510px){
+    .container-checkout .ant-drawer-content-wrapper{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:480px){
+    .group-card-iteml .card-iteml .card-name p{
+        font-size:1em;
+    }
+    .khung-card-iteml button.detele-iteml{
+        top: 0;
+        left: 0;
+    }
+    .totle-money .group-totle-money p{
+        font-size:1.2em;
+    }
+    .container-card .group-card h3,
+    .card-total-money .totle-money h3{
+        font-size:1em;
+    }
+}
+@media screen and (max-width:380px){
+    .group-card-iteml .card-iteml .card-rice p,.card-iteml .card-rice span, .card-iteml .card-quantity span{
+        font-size: 0.9em;
+    }
+    .group-card-iteml .card-iteml .card-name p{
+        font-size:0.9em;
+    }
+    .group-card-iteml .card-iteml .total-sum{
+        font-size:0.8em;
+    }
+    .khung-card-iteml button.detele-iteml{
+        top: -5px;
+        left: -5px;
+    }
+}

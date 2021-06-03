@@ -1,0 +1,163 @@
+.group-history-comment {
+    padding-left: 270px;
+}
+.group-content-product {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.group-content-product h3 {
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 5px;
+    margin:0;
+}
+.group-content-product p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+}
+.group-content-product span{
+    padding: 0 5px;
+    color:rgb(181, 178, 178);
+}
+.group-content-product .group-star-modal,
+.group-content-product .group-time-modal,
+.group-content-product .group-content-modal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.group-history-comment .main-history-comment {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    min-height: 45vh;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+    border-radius: 8px;
+}
+.group-history-comment .main-history-comment .group-title-rewvie {
+    display: flex;
+    padding: 15px;
+}
+.group-history-comment .main-history-comment .group-title-rewvie h3 {
+    color: rgb(51, 51, 51);
+    font-size: 1.2em;
+    font-weight: 550;
+    padding-right: 10px;
+}
+.group-history-comment .main-history-comment .group-title-rewvie p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: rgb(181, 178, 178);
+}
+.group-history-comment .main-history-comment .group-loading-see-more button {
+    padding: 6px 36px;
+    border-radius: 15px;
+    background: transparent;
+    border: 1px solid rgb(24, 158, 255);
+    cursor: pointer;
+    font-size: 0.9em;
+    text-transform: capitalize;
+    color: rgb(24, 158, 255);
+    transition: 0.3s ease-out;
+    font-weight: 520;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.group-history-comment .main-history-comment button:hover {
+    background: rgb(24, 158, 255);
+    color: #fff;
+    border: 1px solid #f7f8f9;
+}
+.group-history-comment .main-history-comment .iteml-history-comment {
+    display: grid;
+    position: relative;
+    grid-template-columns: 60% 40%;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+    margin: 20px 0;
+    padding: 15px 10px;
+    border-radius: 8px;
+}
+.main-history-comment .iteml-history-comment .group-name-img {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.main-history-comment .iteml-history-comment .name-history-comment a {
+    text-transform: capitalize;
+    font-size: 1.1em;
+}
+.main-history-comment .iteml-history-comment .group-info-detele {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.iteml-history-comment .group-info-detele button {
+    padding: 3px 15px;
+    outline: none;
+    border-radius: 2px;
+    color: #fff;
+}
+.iteml-history-comment .group-info-detele .content-history-comment button {
+    border: 1px solid #1890ff;
+    color: #fff;
+    background: #1890ff;
+}
+.iteml-history-comment .group-info-detele .delete-comment-history-comment button {
+    background: #ff4d4f;
+    border: 1px solid #ff4d4f;
+}
+.main-history-comment .iteml-history-comment .margin-history-comment {
+    margin: 5px 10px;
+    text-align: center;
+}
+.iteml-history-comment .img-history-comment {
+    width: 120px;
+    height: auto;
+}
+.iteml-history-comment .img-history-comment img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+    .group-history-comment {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 780px) {
+    .group-history-comment .main-history-comment .iteml-history-comment {
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+        padding: 40px 10px 20px 10px;
+    }
+    .main-history-comment .iteml-history-comment .group-info-detele,
+    .main-history-comment .iteml-history-comment .group-name-img {
+        justify-content: center;
+    }
+    .main-history-comment .iteml-history-comment .group-info-detele {
+        display: block;
+        width: 100%;
+    }
+    .iteml-history-comment .group-info-detele button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .main-history-comment .iteml-history-comment .group-name-img {
+        display: block;
+    }
+    .iteml-history-comment .img-history-comment {
+        width: 150px;
+    }
+    .main-history-comment .iteml-history-comment .margin-history-comment {
+        margin: auto;
+    }
+}

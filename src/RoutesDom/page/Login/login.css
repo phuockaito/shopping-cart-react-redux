@@ -1,0 +1,93 @@
+.group-login {
+    padding-left: 270px;
+    position: relative;
+    display: block;
+}
+.group-login .main-login {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+}
+.group-login .main-login .container-login {
+    max-width: 450px;
+    margin:40px auto;
+    padding:100px 30px;
+    border: 1px solid #dadce0;
+    border-radius:4px;
+}
+.group-login .main-login .btn-login {
+    padding: 7px 18px;
+    height: 40px;
+    border-radius: 4px;
+}
+.group-login .main-login .container-login h3 {
+    color: rgb(51, 51, 51);
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 20px 0;
+    padding-left: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    display:block;
+    bottom:50px;
+}
+.group-login .main-login .group-login-register {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.group-login .main-login .group-login-register .ant-form-item{
+    margin-bottom: 0;
+}
+.group-login .main-login .group-login-register .btn-login{
+    font-size: 1em;
+}
+.group-login .main-login .group-login-register .btn-register{
+    display: block;
+    position: relative;
+    justify-self: center;
+    font-size: 1em;
+    line-height:35px;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    .group-login {
+        padding-left: 0;
+    }
+    .group-login .main-login {
+        margin: 10px;
+    }
+}
+@media screen and (max-width:780px){
+    .group-login .main-login .container-login{
+        margin:auto;
+        border:none;
+        padding: 50px 0;
+    }
+    .group-login .main-login .container-login h3{
+        bottom:30px;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    .group-login .main-login .group-login-register .ant-form-item button.btn-login {
+        width: 100%;
+    }
+    .group-login .main-login .group-login-register .ant-form-item{
+        width: 100%;
+    }
+    .group-login .main-login{
+        padding: 10px 20px;
+    }
+    .group-login .main-login .group-login-register{
+        grid-template-columns: 100%;
+    }
+}

@@ -1,0 +1,232 @@
+.group-nofuound path {
+    stroke: none;
+    stroke-width: 3px;
+}
+.group-history-cart {
+    padding-left: 270px;
+}
+.group-history-cart .container-history-cart {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    min-height: 45vh;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+    border-radius: 8px;
+}
+.group-history-cart .container-history-cart h3 {
+    color: rgb(51, 51, 51);
+    font-size: 1.2em;
+    font-weight: 550;
+    padding: 20px 0;
+    padding-left: 15px;
+}
+.container-history-cart .cart-item-history {
+    margin: 0 0 30px 0;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+    border-radius: 8px;
+}
+/* ----------------------------img/name and  price/ quantity-------------------------------------- */
+.container-history-cart .cart-item-history .group-card-buy {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+/* ----------------------------img and name -------------------------------------- */
+.group-card-buy .information-cart-buy .group-cart-img-name {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+}
+.group-card-buy .information-cart-buy .group-cart-img-name .history-cart-product-img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.information-cart-buy .group-cart-img-name .history-cart-product-img img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+}
+.group-card-buy .information-cart-buy .history-card-name p {
+    margin: 0;
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    color: #1e272e;
+    font-weight: 550;
+}
+.group-card-buy .information-cart-buy .history-card-name p span {
+    color: #1890ff;
+}
+/* ------------------------------Price and quantity------------------------------------ */
+.cart-item-history .group-card-buy .group-card-price-quantity {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    text-align: center;
+}
+.group-card-buy .group-card-price-quantity span {
+    font-size: 1.2em;
+    color: #1e272e;
+    padding: 10px 0;
+    font-weight: 500;
+    display: block;
+    position: relative;
+}
+.group-card-buy .group-card-price-quantity p {
+    font-size: 1.2em;
+    color: rgb(254, 56, 52);
+    font-weight: 500;
+}
+.group-card-price-quantity .group-cart-quantity p {
+    color: #1e272e;
+}
+/* -----------------cart informaiton buy--------------------- */
+.cart-item-history .group-info-buy-cart {
+    text-align: right;
+    padding: 20px 40px;
+    background: #f7f8f9;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.group-info-buy-cart .button-more-info button {
+    margin: 10px;
+    color:#fff;
+}
+.group-info-buy-cart .button-more-info button.btn-cancel-order{
+    background:#3c40c6;
+    border: 1px solid #3c40c6;
+}
+.group-info-buy-cart .button-more-info button.btn-cancel-order-uy{
+    background:#6F1E51;
+    border: 1px solid #6F1E51;
+}
+.group-info-buy-cart .button-more-info button:hover{
+    color:#fff;
+}
+.group-info-buy-cart .button-more-info button.btn-cancel-order-call{
+    background:#1B1464;
+    border: 1px solid #1B1464;
+}
+.group-info-buy-cart .button-more-info button.btn-edit-address{
+    background:#636e72;
+    border: 1px solid #636e72;
+}
+.group-info-buy-cart .button-more-info button.false {
+    background: #ff4d4f;
+    color: #fff;
+}
+.group-info-buy-cart .button-more-info button.true {
+    background: #009432;
+    color: #fff;
+}
+.group-info-buy-cart .group-sum-totale h5 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.group-info-buy-cart .group-sum-totale p {
+    color: rgb(254, 56, 52);
+    font-size: 1.35em;
+}
+
+.group-modal-cart .group-address-modal,
+.group-modal-cart .group-phone-modal,
+.group-modal-cart .group-time-modal,
+.group-modal-cart .group-payment-modal {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.group-modal-cart span {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #1e272e;
+}
+.group-modal-cart p {
+    padding-left: 5px;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #383e44;
+}
+.group-modal-cart .group-payment-modal p {
+    font-weight: 500;
+    color: #1890ff;
+    text-transform: capitalize;
+}
+.group-modal-cart .group-phone-modal p {
+    color: rgb(254, 56, 52);
+}
+.group-modal-cart .group-time-modal p {
+    color:#8395a7;
+}
+/*-------------------------edit cart---------------------------*/
+.group-phone .ant-input-number{
+    width: 100%;
+}
+.btn-register{
+    width: 100%;
+}
+/* --------------------------Responsive---------------------------------------- */
+@media screen and (max-width: 1000px) {
+    .group-history-cart {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 860px) {
+    .container-history-cart .cart-item-history .group-card-buy {
+        grid-template-columns: 100%;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        padding: 10px 0;
+        margin: 0;
+    }
+    .group-card-buy .information-cart-buy .group-cart-img-name .history-cart-product-img {
+        margin: auto;
+    }
+    .group-card-buy .information-cart-buy .history-card-name p,
+    .group-card-buy .group-card-price-quantity span {
+        font-size: 1em;
+    }
+    .group-info-buy-cart .group-sum-totale p {
+        font-size: 1.3em;
+        margin: 5px;
+    }
+    .group-card-buy .information-cart-buy .group-cart-img-name {
+        display: block;
+        padding: 10px;
+    }
+    .group-card-buy .information-cart-buy .history-card-name p {
+        padding: 0;
+        margin: auto;
+    }
+    .cart-item-history .group-card-buy .group-card-price-quantity {
+        width: 100%;
+    }
+    .container-history-cart .cart-item-history {
+        padding: 0;
+        margin: 20px 0;
+    }
+    .group-info-buy-cart .button-more-info button {
+        width: 90%;
+        margin: 9px auto;
+    }
+    .cart-item-history .group-info-buy-cart {
+        padding: 20px 0;
+        text-align: center;
+        border-radius: 0;
+    }
+    .group-info-buy-cart .button-more-info{
+        text-align: center;
+    }
+}
+ 
